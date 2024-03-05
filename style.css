@@ -1,14 +1,9 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     background: #f3f5fc;
     font-family: 'Inter';
-    /* font-style: normal; */
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 120%;
-    /* letter-spacing: 0em; */
-    /* text-align: left; */
+    box-sizing: border-box;
 }
 
 .logo {
@@ -17,21 +12,14 @@
     width: 10%;
 }
 
-/* main {
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: 200px;
-
-} */
-
-.container{
+.container {
     height: 100vh;
     display: flex;
     margin-bottom: 15px;
     margin-left: 15%;
 }
 
-.escribir-texto{
+.escribir-texto {
     width: 60%;
 }
 
@@ -55,22 +43,57 @@
     outline: none;
 }
 
-
-
-
-.mensaje {
-    background: white;
-    background-image: url('imagenes/Muñeco.png');
-    background-repeat: no-repeat;
-    border: none;
+.ningun-mensaje{
+    background-color: white;
+    font-size: 25px;
+}
+.parrafo-encriptado{
+    background-color: white;  
+}
+.sin-mensaje,
+.encriptar
+ {
+    background-color: white;
     border-radius: 24px;
     color: #0a3871;
-    margin-left: 98px;
-    margin-top: 10px;
-    padding-left: 20px;
-    position: absolute;
-    height: 75%;
+    margin: 0;
+    box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 1);
+    height: 85%;
+    width: 23rem;
+    text-align: center;
 }
+
+.img-muñeco {
+    margin-top: 20%;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.ningun-msj {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+
+.texto-resultado {
+    width: 95%;
+  color: #495057;
+  background-color: #ffffff;
+  margin: 16% auto 0 auto;
+  height: 75%;
+  font-size: 24px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+/* .parrafo-encriptado {
+    padding: 1em;
+    background-color: #ffffff;
+} */
+
+
 
 .mensaje:focus {
     outline: none;
@@ -104,28 +127,30 @@
     margin-left: 30px;
 }
 
-.copiar{
-    border: 1px solid #0a3871;
+.copiar {
+    font-size: 14px;
+    width: 80%;
+    height: 5em;
     border-radius: 24px;
+    background: #ffffff;
     color: #0a3871;
+    border: 1px solid #0a3871;
     cursor: pointer;
-    height: 67px;
-    width: 336px;
-    margin-left: 125px;
-    margin-top: 505px;
-    position: absolute;
-    
-}
+  }
+  .copiar:hover {
+background-color: #0a3871;
+color: white;
+  }
 
-.informacion{
+
+.informacion {
     color: #495057;
     font-size: 18px;
-    margin-top:0;
+    margin-top: 0;
 }
 
 
-footer{
+footer {
     border: 1px solid black;
     width: 100%;
 }
-

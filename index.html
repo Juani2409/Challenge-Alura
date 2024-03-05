@@ -15,38 +15,36 @@
     <header>
         <img src="imagenes/Logo.png" alt="logo de alura" class="logo">
     </header>
-    
+
     <main class="container">
 
         <section class="escribir-texto">
             <textarea class="text-area" name="escribir-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-           
+    
             <div>
                 <span class="informacion">Solo letras minusculas y sin acento</span>
             </div>
-           
+    
             <div class="botones">
                 <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
-
-        <section class="sin-mensaje">
-<img src="imagenes/Muñeco.png" alt="">
-<p class="ningun-mensaje">Ningun mensaje fue encontrado</p>
-<p class="parrafo-encriptado">Ingresa el texto qe desees encriptar o desencriptar</p>
-
+    
+        <section class="sin-mensaje" id="sinMensaje">
+            <img class="img-muñeco" src="imagenes/Muñeco.png" alt="imagen muñeco">
+            <p class="ningun-mensaje">Ningun mensaje fue encontrado</p>
+            <p class="parrafo-encriptado">Ingresa el texto que desees encriptar o desencriptar</p>
         </section>
-         <section class="encriptar" style="display: none;">
-           
-          </textarea>
-          <!-- <h6>No se ha encontrado ningun mensaje</h6>
-          <p>Ingresa el texto que desea encriptar o desencriptar</p>
-            <div> -->
-                <!-- <button class="copiar" style="display: none;">Copiar</button>
-            </div>
-        </section> -->
+    
+        <section class="encriptar" id="msj-encriptado" style="display: none;">
+            <p id="texto-revelado" class="texto-resultado"></p>
+            <button onclick="copiarMsjEncriptado()" class="copiar">
+                Copiar
+              </button>
+        </section>
     </main>
+    
     <footer>
         <p>
             Elaborado por Juan Ignacio Grodz

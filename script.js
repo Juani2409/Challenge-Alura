@@ -55,3 +55,17 @@ if(stringDesencriptado.includes(matrizCodigo[i][1])){
 
 return stringDesencriptado
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const botonCopiar = document.querySelector('.copiar');
+    const textarea = document.querySelector('.mensaje');
+
+    botonCopiar.addEventListener('click', function() {
+        textarea.select();
+        document.execCommand('copy');
+       
+    });
+});

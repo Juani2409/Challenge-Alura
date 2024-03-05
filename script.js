@@ -69,3 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
        
     });
 });
+
+
+function mostrarBotonCopiar() {
+    const botonCopiar = document.querySelector('.copiar');
+    botonCopiar.style.display = 'absolute'
+    botonCopiar.style.marginTop = '505px'; // Ajustar margen superior según sea necesario
+    botonCopiar.style.marginLeft = '125px'; // Ajustar margen izquierdo según sea necesario
+}

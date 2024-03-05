@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
+
 <body>
     <header>
         <img src="imagenes/Logo.png" alt="logo de alura" class="logo">
     </header>
-<main>
-   
-    <section>
-        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-    <div>
-        <h6 class="informacion">Solo letras minusculas y sin acento</h6>
-    </div>
-    <div class="botones">
-        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-    </div>
-    </section>
-    
-    <section>
-<textarea class="mensaje" cols="20" rows="10"></textarea>
-<div>
-    <button class="copiar">Copiar</button>
-</div>
-    </section>
-</main>
+    <main>
 
-<script src="/script.js"></script>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="sin-mensaje">
+<img src="imagenes/Muñeco.png" alt="">
+<p class="ningun-mensaje">Ningun mensaje fue encontrado</p>
+<p class="parrafo-encriptado">Ingresa el texto qe desees encriptar o desencriptar</p>
+
+        </section>
+        <!-- <section>
+            <textarea class="mensaje" cols="20" rows="10">
+          </textarea> -->
+          <!-- <h6>No se ha encontrado ningun mensaje</h6>
+          <p>Ingresa el texto que desea encriptar o desencriptar</p>
+            <div> -->
+                <!-- <button class="copiar" style="display: none;">Copiar</button>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <p>
+            Elaborado por Juan Ignacio Grodz
+        </p>
+    </footer>
+
+    <script src="/script.js"></script>
 </body>
+
 </html>

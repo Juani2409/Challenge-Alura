@@ -12,21 +12,37 @@
 }
 
 .logo {
-    padding-top: 15px;
-    padding-left: 10px;
+    padding-top: 35px;
+    padding-left: 20px;
     width: 10%;
 }
 
-main {
+/* main {
     display: flex;
     margin-bottom: 50px;
     margin-left: 200px;
 
+} */
+
+.container{
+    height: 100vh;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.escribir-texto{
+    width: 60%;
 }
 
 .text-area {
+    width: 100%;
+    min-height: 55vh;
+    margin-top: 10%;
+    font-size: 32px;
     border: none;
     color: #0a3871;
+    background-color: #f3f5fc;
     margin-top: 50px;
     text-transform: lowercase;
 }
@@ -61,8 +77,10 @@ main {
 }
 
 .botones {
+    width: 90%;
     display: flex;
-    margin-top: 18px;
+    justify-content: space-between;
+    margin-top: 2%;
 }
 
 .btn-encriptar {

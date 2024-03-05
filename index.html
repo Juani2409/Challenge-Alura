@@ -15,13 +15,16 @@
     <header>
         <img src="imagenes/Logo.png" alt="logo de alura" class="logo">
     </header>
-    <main>
+    
+    <main class="container">
 
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <section class="escribir-texto">
+            <textarea class="text-area" name="escribir-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+           
             <div>
-                <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+                <span class="informacion">Solo letras minusculas y sin acento</span>
             </div>
+           
             <div class="botones">
                 <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
@@ -34,9 +37,9 @@
 <p class="parrafo-encriptado">Ingresa el texto qe desees encriptar o desencriptar</p>
 
         </section>
-        <!-- <section>
-            <textarea class="mensaje" cols="20" rows="10">
-          </textarea> -->
+         <section class="encriptar" style="display: none;">
+           
+          </textarea>
           <!-- <h6>No se ha encontrado ningun mensaje</h6>
           <p>Ingresa el texto que desea encriptar o desencriptar</p>
             <div> -->
